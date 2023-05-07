@@ -1,6 +1,19 @@
 import React from "react";
-import PortfolioContainer from "./components/PortfolioContainer";
+import Navbar from "./components/NavTabs";
+import Footer from "./components/Footer";
+import { BrowserRouter as Router } from "react-router-dom";
+import AnimatedRoutes from "./components/AnimatedRoutes";
 
-const App = () => <PortfolioContainer />;
+function App() {
+    return (
+        <div className="App">
+            <Router>
+                <Navbar />
+                <AnimatedRoutes />
+                <Footer />
+            </Router>
+        </div>
+    )
+}
 
 export default App;

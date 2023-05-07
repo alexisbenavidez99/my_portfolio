@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
-export default function NavTabs({ currentPage, handlePageChange }) {
+export default function NavTabs() {
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-dark bg-black">
@@ -15,36 +16,16 @@ export default function NavTabs({ currentPage, handlePageChange }) {
                     <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
                         <ul className="nav">
                             <li className="nav-item">
-                                <a
-                                    className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
-                                    href="#about-me"
-                                    onClick={() => handlePageChange('About')}
-                                >About Me
-                                </a>
+                                <Link to="/about"> About </Link>
                             </li>
                             <li className="nav-item">
-                                <a
-                                    className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'}
-                                    href="#projects"
-                                    onClick={() => handlePageChange('Projects')}
-                                >Projects
-                                </a>
+                            <Link to="/projects"> Projects </Link>
                             </li>
                             <li className="nav-item">
-                                <a
-                                    className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
-                                    href="#contact"
-                                    onClick={() => handlePageChange('Contact')}
-                                >Contact Me
-                                </a>
+                            <Link to="/resume"> Resume </Link>
                             </li>
                             <li className="nav-item">
-                                <a
-                                    className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
-                                    href="#resume"
-                                    onClick={() => handlePageChange('Resume')}
-                                >Resume
-                                </a>
+                            <Link to="/contact"> Contact </Link>
                             </li>
                         </ul>
                     </div>
