@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
+import { motion } from "framer-motion";
 
 export default function Contact() {
     const [name, setName] = useState('');
@@ -41,58 +42,64 @@ export default function Contact() {
 
     return (
         <div className="contact">
-            <h1 className="contact-header">Contact Me</h1>
-            <div className="mb-3 w-25">
-                <label htmlFor="name" className="form-label">Name</label>
-                <input type="text"
-                    className="form-control"
-                    name="name"
-                    value={name}
-                    onChange={handleInputChange}
-                />
-                <div className="invalid-feedback">
-      Please provide your name.
-    </div>
-            </div>
-
-            <div className="mb-3 w-25">
-                <label htmlFor="email" className="form-label">Email address</label>
-                <input
-                    type="email"
-                    className="form-control"
-                    placeholder="name@example.com"
-                    name="email"
-                    value={email}
-                    onChange={handleInputChange}
-                />
-                <div className="invalid-feedback">
-      Please provide a vaild email.
-    </div>
-            </div>
-            <div className="mb-3 w-25">
-                <label htmlFor="message" className="form-label">Message</label>
-                <input
-                    type="text"
-                    className="form-control"
-                    value={message}
-                    onChange={handleInputChange}
-                    name="message"
-                    style={{
-                        lineHeight: '50px'
-                    }}
-                />
-                <div className="invalid-feedback">
-      Please provide a message.
-    </div>
-            </div>
-            <div className="col-12">
-                <button type="submit" className="btn btn-light" onClick={handleFormSubmit}>Submit</button>
-            </div>
-            {errMessage && (
-                <div>
-                    <p className="error-text">{errMessage}</p>
+            <motion.div
+                initial={{ opacity: 0, backgroundColor: "black" }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.5, duration: 1.5 }}
+            >
+                <h1 className="contact-header">Contact Me</h1>
+                <div className="mb-3 w-25">
+                    <label htmlFor="name" className="form-label">Name</label>
+                    <input type="text"
+                        className="form-control"
+                        name="name"
+                        value={name}
+                        onChange={handleInputChange}
+                    />
+                    <div className="invalid-feedback">
+                        Please provide your name.
+                    </div>
                 </div>
-            )}
+
+                <div className="mb-3 w-25">
+                    <label htmlFor="email" className="form-label">Email address</label>
+                    <input
+                        type="email"
+                        className="form-control"
+                        placeholder="name@example.com"
+                        name="email"
+                        value={email}
+                        onChange={handleInputChange}
+                    />
+                    <div className="invalid-feedback">
+                        Please provide a vaild email.
+                    </div>
+                </div>
+                <div className="mb-3 w-25">
+                    <label htmlFor="message" className="form-label">Message</label>
+                    <input
+                        type="text"
+                        className="form-control"
+                        value={message}
+                        onChange={handleInputChange}
+                        name="message"
+                        style={{
+                            lineHeight: '50px'
+                        }}
+                    />
+                    <div className="invalid-feedback">
+                        Please provide a message.
+                    </div>
+                </div>
+                <div className="col-12">
+                    <button type="submit" className="btn btn-light" onClick={handleFormSubmit}>Submit</button>
+                </div>
+                {errMessage && (
+                    <div>
+                        <p className="error-text">{errMessage}</p>
+                    </div>
+                )}
+            </motion.div>
         </div>
     )
 }

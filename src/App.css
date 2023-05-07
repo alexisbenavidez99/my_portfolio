@@ -33,9 +33,9 @@ footer a:hover {
     color: white;
 }
 
-a:hover {
+/* a:hover {
     color: black;
-}
+} */
 
 .container-fluid {
     margin: 30px;
@@ -46,7 +46,7 @@ a:hover {
     color: gray;
 }
 
-.nav-link:hover {
+a:hover {
     color: white;
 }
 

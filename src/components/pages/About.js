@@ -1,9 +1,13 @@
 import React from 'react';
 import profilePic from '../../assets/profilepic.jpg';
+import { motion } from "framer-motion";
 
 export default function About() {
     return (
         <div className="about-me">
+            <motion.div initial={{ opacity: 0, backgroundColor: "black" }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.5, duration: 1.5 }}>
             <h1 className="about-header">Hi,</h1>
             <h1 className="about-header">My name is Alexis Benavidez.</h1>
             <p className="about-section">
@@ -12,6 +16,7 @@ export default function About() {
                 Take a look around!
             </p>
             <img className="profile-pic" src={profilePic} alt="alexis"></img>
+            </motion.div>
         </div>
     )
 }
