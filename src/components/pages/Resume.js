@@ -10,7 +10,9 @@ export default function Resume() {
                 transition={{ delay: 0.5, duration: 1.5 }}
             >
                 <h1 className="resume-header">Resume</h1>
-                <a href="https://drive.google.com/file/d/19zvtO45ZZU3HC9c11tQWm_MICwI6Ahjc/view?usp=share_link" download="">Click here to download my resume</a>
+                <div className="button">
+                    <a href="https://github.com/alexisbenavidez99/workout-tracker/files/11416273/Alexis.Benavidez.Resume.pdf" download>Download CV</a>
+                </div>
                 <h2 className="tech-header">Front-end Proficiencies</h2>
                 <ul className="tech-names">
                     <li>HTML</li>

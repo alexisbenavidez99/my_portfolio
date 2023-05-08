@@ -18,12 +18,15 @@ export default function NavTabs() {
                             <li className="nav-item px-2">
                                 <Link to="/about"> About </Link>
                             </li>
+
                             <li className="nav-item px-2">
                             <Link to="/projects"> Projects </Link>
                             </li>
+
                             <li className="nav-item px-2">
                             <Link to="/resume"> Resume </Link>
                             </li>
+                            
                             <li className="nav-item px-2">
                             <Link to="/contact"> Contact </Link>
                             </li>
