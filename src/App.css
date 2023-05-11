@@ -172,9 +172,6 @@ label,
     cursor: pointer;
     outline: none;
 }
-a .button:hover {
-    color: white;
-}
 
 .button:hover {
     background-color: #ff24b6;
@@ -186,6 +183,30 @@ a .button:hover {
 .button:active {
     transform: translateY(-1px);
 }
+
+.contact-list-container {
+    background-color: green;
+}
+
+.contact-list-container ul{
+    float: right;
+}
+
+.contact-list-container li {
+    list-style-type: none;
+}
+
+.contact-list-container li .contact-list {
+    font-family: "Raleway", sans-serif, serif;
+    color: white;
+    display: flex;
+    width: 100%;
+}
+
+.icon {
+    padding-right: 10px;
+}
+
 
 /* MEDIA QUERIES */
 

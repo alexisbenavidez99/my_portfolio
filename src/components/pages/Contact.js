@@ -1,4 +1,8 @@
 import React, { useState } from 'react';
+import { BiMap } from "react-icons/bi";
+import { AiOutlineMail } from "react-icons/ai";
+import { AiOutlinePhone } from "react-icons/ai";
+import { AiOutlineGithub } from "react-icons/ai";
 import { validateEmail } from '../../utils/helpers';
 import { motion } from "framer-motion";
 
@@ -93,6 +97,44 @@ export default function Contact() {
                 </div>
                 <div className="col-12">
                     <button type="submit" className="btn btn-light" onClick={handleFormSubmit}>Submit</button>
+                </div>
+                <div className="contact-list-container">
+                    <div className="left">
+                        <ul>
+                            <li>
+                            <div className="contact-list">
+                                <div className="icon">
+                                    <BiMap color="white" />
+                                    </div>
+                                    <p>Murfressboro, TN</p>
+                                </div>
+                            </li>
+                            <li>
+                            <div className="contact-list">
+                                <div className="icon">
+                                    <AiOutlinePhone color="white" />
+                                    </div>
+                                    <p>615-956-1191</p>
+                                </div>
+                            </li>
+                            <li>
+                            <div className="contact-list">
+                                <div className="icon">
+                                    <AiOutlineMail color="white" />
+                                    </div>
+                                    <p>alexisobenavidez@gmail.com</p>
+                                </div>
+                            </li>
+                            <li>
+                            <div className="contact-list">
+                                <div className="icon">
+                                    <AiOutlineGithub color="white" />
+                                    </div>
+                                    <p>alexisbenavidez99</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 {errMessage && (
                     <div>
