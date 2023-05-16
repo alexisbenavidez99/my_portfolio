@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from "framer-motion";
+import resume from '../../assets/resume.pdf'
 
 export default function Resume() {
     return (
@@ -10,9 +11,8 @@ export default function Resume() {
                 transition={{ delay: 0.5, duration: 1.5 }}
             >
                 <h1 className="resume-header">Resume</h1>
-                <div className="button">
-                    <a href="https://github.com/alexisbenavidez99/workout-tracker/files/11416273/Alexis.Benavidez.Resume.pdf" download>Download CV</a>
-                </div>
+                <a className="button" href={resume} download>Download CV</a>
+                <div className="resume-content">
                 <h2 className="tech-header">Front-end Proficiencies</h2>
                 <ul className="tech-names">
                     <li>HTML</li>
@@ -34,6 +34,7 @@ export default function Resume() {
                     <li>REST</li>
                     <li>GraphQL</li>
                 </ul>
+                </div>
             </motion.div>
         </div>
     )

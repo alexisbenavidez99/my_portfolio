@@ -1,5 +1,4 @@
 import React from "react";
-import { IconName } from "react-icons/";
 import Navbar from "./components/NavTabs";
 import Footer from "./components/Footer";
 import { BrowserRouter as Router } from "react-router-dom";
