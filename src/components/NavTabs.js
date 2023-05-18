@@ -6,7 +6,7 @@ export default function NavTabs() {
         <div>
             <nav className="navbar navbar-expand-lg navbar-dark bg-black">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="#about-me">
+                    <a className="navbar-brand" href="/about">
                         <p className="name-icon">Alexis</p>
                         <p className="name-icon">Benavidez.</p>
                     </a>
