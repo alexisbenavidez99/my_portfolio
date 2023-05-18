@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 import { BiMap } from "react-icons/bi";
 import { AiOutlineMail } from "react-icons/ai";
 import { AiOutlinePhone } from "react-icons/ai";
@@ -45,103 +46,83 @@ export default function Contact() {
     };
 
     return (
-        <div className="contact">
-            <motion.div
+        <motion.div
                 initial={{ opacity: 0, backgroundColor: "black" }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5, duration: 1.5 }}
             >
-                <h1 className="contact-header">Contact Me</h1>
-                <div className="mb-3 w-25">
-                    <label htmlFor="name" className="form-label">Name</label>
-                    <input type="text"
-                        className="form-control"
-                        name="name"
-                        value={name}
-                        onChange={handleInputChange}
-                    />
-                    <div className="invalid-feedback">
-                        Please provide your name.
-                    </div>
-                </div>
+        <Container className='contact'>
+            <Row className="mb-5 mt-3">
+                <Col lg='8'>
+                    <h1 className="mb-4 contact-header">
+                        Contact Me
+                    </h1>
+                </Col>
+            </Row>
 
-                <div className="mb-3 w-25">
-                    <label htmlFor="email" className="form-label">Email address</label>
-                    <input
-                        type="email"
-                        className="form-control"
-                        placeholder="name@example.com"
-                        name="email"
-                        value={email}
-                        onChange={handleInputChange}
-                    />
-                    <div className="invalid-feedback">
-                        Please provide a vaild email.
-                    </div>
-                </div>
-                <div className="mb-3 w-25">
-                    <label htmlFor="message" className="form-label">Message</label>
-                    <input
-                        type="text"
-                        className="form-control"
-                        value={message}
-                        onChange={handleInputChange}
-                        name="message"
-                        style={{
-                            lineHeight: '50px'
-                        }}
-                    />
-                    <div className="invalid-feedback">
-                        Please provide a message.
-                    </div>
-                </div>
-                <div className="col-12">
-                    <button type="submit" className="btn btn-light" onClick={handleFormSubmit}>Submit</button>
-                </div>
-                <div className="contact-list-container">
-                    <div className="left">
-                        <ul>
-                            <li>
-                            <div className="contact-list">
-                                <div className="icon">
-                                    <BiMap color="white" />
-                                    </div>
-                                    <p>Murfressboro, TN</p>
-                                </div>
-                            </li>
-                            <li>
-                            <div className="contact-list">
-                                <div className="icon">
-                                    <AiOutlinePhone color="white" />
-                                    </div>
-                                    <p>615-956-1191</p>
-                                </div>
-                            </li>
-                            <li>
-                            <div className="contact-list">
-                                <div className="icon">
-                                    <AiOutlineMail color="white" />
-                                    </div>
-                                    <p>alexisobenavidez@gmail.com</p>
-                                </div>
-                            </li>
-                            <li>
-                            <div className="contact-list">
-                                <div className="icon">
-                                    <AiOutlineGithub color="white" />
-                                    </div>
-                                    <p>alexisbenavidez99</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                {errMessage && (
-                    <div>
-                        <p className="error-text">{errMessage}</p>
-                    </div>
-                )}
-            </motion.div>
-        </div>
+            <Row className="sec_sp">
+                <Col lg='5' className="mb-5">
+                    <h3 className='color_sec py-4 contact-info'>Get in touch</h3>
+                    <address className="contact-info">
+                        <AiOutlineMail />
+                        <strong className='pt-2'> alexisobenavidez@gmail.com</strong>
+                        <p className='pt-4'>
+                            <AiOutlinePhone />
+                            <strong> 615-956-1191</strong>
+                        </p>
+                        <p className='pt-2'>
+                            <BiMap />
+                            <strong> Murfreesboro, Tennessee</strong>
+                        </p>
+                        <p className='pt-2'>
+                            <AiOutlineGithub />
+                            <strong> alexisbenavidez99</strong>
+                        </p>
+                    </address>
+                </Col>
+                <Col lg='7' className='d-flex align-items-center'>
+                    <form className='contact_form w-100'>
+                        <Row>
+                            <Col lg='6' className='form-group mb-3'>
+                                <input
+                                    className='form-control'
+                                    id='name'
+                                    name='name'
+                                    placeholder='Name'
+                                    type='text'
+                                    value={name}
+                                    onChange={handleInputChange}
+                                />
+                            </Col>
+                            <Col lg='6' className='form-group mb-3'>
+                                <input
+                                    className='form-control'
+                                    id='email'
+                                    name='email'
+                                    placeholder='Email'
+                                    type='email'
+                                    value={email}
+                                    onChange={handleInputChange}
+                                />
+                            </Col>
+                        </Row>
+                        <textarea className='form-control' id='message'
+                                    name='message'
+                                    placeholder='Message'
+                                    rows='5'
+                                    value={message}
+                                    onChange={handleInputChange}
+                        ></textarea>
+                        <br />
+                        <Row>
+                            <Col lg='12' className='form-group'>
+                                <button className='button' type='submit' onClick={handleFormSubmit}>Send</button>
+                            </Col>
+                        </Row>
+                    </form>
+                </Col>
+            </Row>
+        </Container>
+        </motion.div>
     )
 }

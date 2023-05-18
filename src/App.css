@@ -6,7 +6,7 @@ ul {
     padding-bottom: 20px;
 }
 
-html {
+body {
     height: 100vh;
     border: 5px solid hotpink;
     background-color: black;
@@ -25,36 +25,31 @@ footer a {
     color: gray;
 }
 
-footer a:hover {
-    color: white;
-}
-
+footer a:hover,
+a:hover,
+.work-container p a,
 .resume a:hover {
     color: white;
 }
-
-/* a:hover {
-    color: black;
-} */
 
 .container-fluid {
     margin: 30px;
 }
 
-.nav-link {
+.nav-link,
+input,
+textarea {
     font-family: "Raleway", sans-serif, serif;
     color: gray;
 }
 
-a:hover {
-    color: white;
+.contact {
+    padding: 50px;
 }
 
 .about-me,
-.resume,
-.contact {
+.resume {
     padding: 50px 200px;
-    background-color: black;
 }
 
 .resume-content {
@@ -97,6 +92,7 @@ a:hover {
 
 label,
 .about-header,
+.contact-info,
 .tech-header, 
 .tech-names {
     font-family: "Raleway", sans-serif, serif;
@@ -109,7 +105,6 @@ label,
     align-content: space-evenly;
     flex-wrap: wrap;
     width: 100%;
-    /* padding: 0 12px; */
     padding: 80px 150px;
     background-color: black;
 }
@@ -152,10 +147,6 @@ label,
     line-height: 2px;
 }
 
-.work-container p a {
-    color: white;
-}
-
 .work-container p a:hover {
     color: black;
 }
@@ -182,29 +173,6 @@ label,
     box-shadow: 0px 15px 20px rgb(252 13 141 / 40%);
     color: #fff;
     transform: translateY(-7px);
-}
-
-.contact-list-container {
-    background-color: green;
-}
-
-.contact-list-container ul{
-    float: right;
-}
-
-.contact-list-container li {
-    list-style-type: none;
-}
-
-.contact-list-container li .contact-list {
-    font-family: "Raleway", sans-serif, serif;
-    color: white;
-    display: flex;
-    width: 100%;
-}
-
-.icon {
-    padding-right: 10px;
 }
 
 
