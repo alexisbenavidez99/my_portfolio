@@ -99,7 +99,7 @@ label,
     color: white;
 }
 
-.projects {
+/* .projects {
     display: flex;
     justify-content: space-between;
     align-content: space-evenly;
@@ -107,9 +107,9 @@ label,
     width: 100%;
     padding: 80px 150px;
     background-color: black;
-}
+} */
 
-.work-container {
+/* .work-container {
     width: 47%;
     height: 250px;
     margin: 5px 7px;
@@ -149,7 +149,31 @@ label,
 
 .work-container p a:hover {
     color: black;
+} */
+
+.projects-container {
+    overflow: initial;
 }
+
+.project-content {
+    padding: 0 1.5rem;
+}
+
+.project-img {
+    width: 265px;
+    border-radius: .5rem;
+    justify-self: center;
+}
+
+.project-title {
+    margin-bottom: 5px;
+}
+
+.project-description {
+    margin-bottom: 75px;
+}
+
+
 
 .button {
     padding: 1.3em 3em;
