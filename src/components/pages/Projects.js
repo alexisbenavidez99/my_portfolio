@@ -16,7 +16,6 @@ export default function Projects() {
     const swiperElRef = useRef(null);
 
   useEffect(() => {
-    // listen for Swiper events using addEventListener
     swiperElRef.current.addEventListener('progress', (e) => {
       const [swiper, progress] = e.detail;
       console.log(progress);
@@ -28,46 +27,13 @@ export default function Projects() {
   }, []);
 
     return (
-        <div className="projects">
-            {/* <motion.div
-                className="projects"
+        <motion.div
                 initial={{ opacity: 0, backgroundColor: "black" }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5, duration: 1.5 }}
             >
-                <div className="work-container primary-container">
-                    <a href="https://rocky-thicket-55053.herokuapp.com/" target="_blank" rel="noreferrer">
-                        <img src={longevity} alt="Longevity" />
-                    </a>
-                    <h3>Longevity</h3>
-                    <p><a href="https://github.com/alexisbenavidez99/workout-tracker">GH</a></p>
-                </div>
-
-                <div className="work-container">
-                    <a href="https://devkjoon.github.io/coinspire/" target="_blank" rel="noreferrer">
-                        <img src={coinspire} alt="Coinspire" />
-                    </a>
-                    <h3>Coinspire</h3>
-                    <p><a href="https://github.com/devkjoon/coinspire">GH</a></p>
-                </div>
-
-                <div className="work-container">
-                    <a href="https://alexisbenavidez99.github.io/Weather-App-6/" target="_blank" rel="noreferrer">
-                        <img src={weather} alt="Weather App" />
-                    </a>
-                    <h3>Weather Forecast App</h3>
-                    <p><a href="https://github.com/alexisbenavidez99/Weather-App-6">GH</a></p>
-                </div>
-
-                <div className="work-container">
-                    <a href="https://book-haven.herokuapp.com/" target="_blank" rel="noreferrer">
-                        <img src={bookHaven} alt="Book Haven" />
-                    </a>
-                    <h3>Book Haven</h3>
-                    <p><a href="https://github.com/Nmotley92/e-commerce-site">GH</a></p>
-                </div> */}
-                <section className='portfolio-section' id='portfolio'>
-                    <h2 className='section-title'>Projects</h2>
+                <section className='projects-section' id='portfolio'>
+                    <h1 className='projects-header'>Projects</h1>
                     
                     <Swiper className='projects-container container swiper-container'
                     ref={swiperElRef}
@@ -91,7 +57,7 @@ export default function Projects() {
                                     Visit Site 
                                     <AiOutlineArrowRight />
                                 </a>
-                                <a href="https://github.com/alexisbenavidez99/workout-tracker" className='button button--flex button--small portfolio-button'>
+                                <a href="https://github.com/alexisbenavidez99/workout-tracker" className='button gh-button'>
                                 <AiOutlineGithub />
                                     GitHub
                                 </a>
@@ -109,7 +75,7 @@ export default function Projects() {
                                     Visit Site 
                                     <AiOutlineArrowRight />
                                 </a>
-                                <a href="https://github.com/devkjoon/coinspire" className='button button--flex button--small portfolio-button'>
+                                <a href="https://github.com/devkjoon/coinspire" className='button gh-button'>
                                 <AiOutlineGithub />
                                     GitHub
                                 </a>
@@ -127,7 +93,7 @@ export default function Projects() {
                                     Visit Site 
                                     <AiOutlineArrowRight />
                                 </a>
-                                <a href="https://github.com/alexisbenavidez99/Weather-App-6" className='button button--flex button--small portfolio-button'>
+                                <a href="https://github.com/alexisbenavidez99/Weather-App-6" className='button gh-button'>
                                 <AiOutlineGithub />
                                     GitHub
                                 </a>
@@ -145,7 +111,7 @@ export default function Projects() {
                                     Visit Site 
                                     <AiOutlineArrowRight />
                                 </a>
-                                <a href="https://github.com/Nmotley92/e-commerce-site" className='button button--flex button--small portfolio-button'>
+                                <a href="https://github.com/Nmotley92/e-commerce-site" className='button gh-button'>
                                 <AiOutlineGithub />
                                     GitHub
                                 </a>
@@ -154,6 +120,6 @@ export default function Projects() {
                         </div>
                     </Swiper>
                 </section>
-        </div>
+        </motion.div>
     )
 }
