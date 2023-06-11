@@ -53,6 +53,13 @@ textarea {
 
 .resume-content {
     padding-top: 30px;
+    display: flex;
+}
+
+.tech-names {
+    font-family: "Raleway", sans-serif, serif;
+    color: white;
+    padding-right: 50px;
 }
 
 .about-section {
@@ -92,8 +99,7 @@ textarea {
 label,
 .about-header,
 .contact-info,
-.tech-header, 
-.tech-names,
+.tech-header,
 .project-description {
     font-family: "Raleway", sans-serif, serif;
     color: white;
@@ -104,7 +110,6 @@ label,
 .swiper-pagination-bullet {
     color: #ff24b6;
 }
-
 
 .projects-header {
     font-family: "Gloock", sans-serif, serif;

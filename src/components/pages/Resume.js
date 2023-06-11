@@ -13,8 +13,9 @@ export default function Resume() {
                 <h1 className="resume-header">Resume</h1>
                 <a className="button" href={resume} download>Download CV</a>
                 <div className="resume-content">
+                <div className="tech-names">
                 <h2 className="tech-header">Front-end Proficiencies</h2>
-                <ul className="tech-names">
+                <ul>
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>JavaScript</li>
@@ -24,8 +25,10 @@ export default function Resume() {
                     <li>Bootstrap</li>
                     <li>TailwindCSS</li>
                 </ul>
+                </div>
+                <div className="tech-names">
                 <h2 className="tech-header">Back-end Proficiencies</h2>
-                <ul className="tech-names">
+                <ul>
                     <li>APIs</li>
                     <li>Node</li>
                     <li>Express</li>
@@ -34,6 +37,7 @@ export default function Resume() {
                     <li>REST</li>
                     <li>GraphQL</li>
                 </ul>
+                </div>
                 </div>
             </motion.div>
         </div>
