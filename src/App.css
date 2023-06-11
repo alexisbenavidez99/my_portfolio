@@ -27,53 +27,9 @@ footer a {
 
 footer a:hover,
 a:hover,
-.work-container p a,
 .resume a:hover {
     color: white;
 }
-
-/* Hamburger menu */
-
-.animated-icon2 span:nth-child(1) {
-    top: 0px;
-  }
-  
-  .animated-icon2 span:nth-child(2),
-  .animated-icon2 span:nth-child(3) {
-    top: 10px;
-  }
-  
-  .animated-icon2 span:nth-child(4) {
-    top: 20px;
-  }
-  
-  .animated-icon2.open span:nth-child(1) {
-    top: 11px;
-    width: 0%;
-    left: 50%;
-  }
-  
-  .animated-icon2.open span:nth-child(2) {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-  
-  .animated-icon2.open span:nth-child(3) {
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-  }
-  
-  .animated-icon2.open span:nth-child(4) {
-    top: 11px;
-    width: 0%;
-    left: 50%;
-  }
-
-  
 
 .container-fluid {
     margin: 30px;
@@ -144,13 +100,11 @@ label,
 }
 
 .swiper-button-prev,
-.swiper-button-next {
+.swiper-button-next,
+.swiper-pagination-bullet {
     color: #ff24b6;
 }
 
-.swiper-pagination-bullet {
-    background-color: #ff24b6;
-}
 
 .projects-header {
     font-family: "Gloock", sans-serif, serif;
@@ -204,7 +158,6 @@ label,
     background-color: #ff24b6;
     box-shadow: 0px 15px 20px rgb(252 13 141 / 40%);
     color: #fff;
-    transform: translateY(-7px);
 }
 
 
