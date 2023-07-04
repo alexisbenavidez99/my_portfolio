@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my_portfolio/static/css/main.0c0defb1.css",
-    "main.js": "/my_portfolio/static/js/main.ffe00982.js",
+    "main.css": "/my_portfolio/static/css/main.694a2858.css",
+    "main.js": "/my_portfolio/static/js/main.ba5daee4.js",
     "static/media/longevity.png": "/my_portfolio/static/media/longevity.5bc4d1564d54c285061c.png",
     "static/media/bookhaven.png": "/my_portfolio/static/media/bookhaven.79798adfe9b16182de19.png",
     "static/media/fa-solid-900.svg": "/my_portfolio/static/media/fa-solid-900.7a8b4f130182d19a2d7c.svg",
@@ -26,11 +26,11 @@
     "index.html": "/my_portfolio/index.html",
     "static/media/arrow_left.svg": "/my_portfolio/static/media/arrow_left.db6e2d88c7c35a775ce4.svg",
     "static/media/arrow_right.svg": "/my_portfolio/static/media/arrow_right.f7c6ac6d310d3b82f0a0.svg",
-    "main.0c0defb1.css.map": "/my_portfolio/static/css/main.0c0defb1.css.map",
-    "main.ffe00982.js.map": "/my_portfolio/static/js/main.ffe00982.js.map"
+    "main.694a2858.css.map": "/my_portfolio/static/css/main.694a2858.css.map",
+    "main.ba5daee4.js.map": "/my_portfolio/static/js/main.ba5daee4.js.map"
   },
   "entrypoints": [
-    "static/css/main.0c0defb1.css",
-    "static/js/main.ffe00982.js"
+    "static/css/main.694a2858.css",
+    "static/js/main.ba5daee4.js"
   ]
 }
