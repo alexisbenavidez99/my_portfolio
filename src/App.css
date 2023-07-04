@@ -4,10 +4,20 @@
 
 ul {
     padding-bottom: 20px;
+    list-style: none;
+}
+
+.tech-names li::before {
+    content: "\2022";
+    color: hotpink;
+    font-weight: bolder;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     border: 5px solid hotpink;
     background-color: black;
 }
@@ -139,6 +149,7 @@ label,
 }
 
 .button {
+    font-family: "Raleway", sans-serif, serif;
     padding: 1.3em 3em;
     font-size: 12px;
     margin: 28px 0px;
@@ -168,3 +179,99 @@ label,
 
 /* MEDIA QUERIES */
 
+/* Desktops and Tablets */
+
+@media only screen and (max-width: 1046px) {
+  .profile-pic {
+    top: 40%;
+  }
+}
+
+@media only screen and (max-width: 921px) {
+    .profile-pic {
+        top: 44.5%;
+        left: 65%;
+    }
+}
+
+@media only screen and (max-width: 815px) {
+    .profile-pic {
+        display: none;
+    }
+
+    .about-me {
+        padding: 50px 100px;
+    }
+
+    .about-section {
+        width: 100%;
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 706px) {
+    .resume {
+        padding: 100px;
+    }
+}
+
+@media only screen and (max-width: 674px) {
+    .resume {
+        padding: 100px;
+        min-height: 100vh;
+    }
+}
+
+/* Bigger phones/regular phones */
+
+@media only screen and (max-width: 570px) {
+    .resume {
+        padding: 80px;
+    }
+
+    .tech-names {
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 491px) {
+    .resume {
+        padding: 50px;
+    }
+
+    .gh-button,
+    .portfolio-button {
+        padding: 1.5em 2.5em;
+    }
+}
+
+@media only screen and (max-width: 467px) {
+    .resume {
+        padding: 30px;
+    }
+
+    .gh-button,
+    .portfolio-button {
+        padding: 1em 2em;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .tech-header {
+        font-size: 1.5rem;
+    }
+    .tech-names {
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 378px) {
+    .gh-button,
+    .portfolio-button {
+        display: inline-flex;
+        margin-top: 3px;
+    }
+
+    .gh-button {
+        margin: 0px;
+    }
+}
