@@ -1,6 +1,6 @@
 {
   "name": "my_portfolio",
-  "homepage": "https://alexisbenavidez99.github.io/my_portfolio",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
